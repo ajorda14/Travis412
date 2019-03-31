@@ -9,4 +9,9 @@ public class SimpleCalculator {
 	{
 		return b - a;
 	}
+	
+	public int multiply(int a, int b)
+	{
+		return a * b;
+	}
 }
