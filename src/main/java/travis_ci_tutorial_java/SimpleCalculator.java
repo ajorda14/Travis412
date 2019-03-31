@@ -14,4 +14,16 @@ public class SimpleCalculator {
 	{
 		return a * b;
 	}
+	
+	public Integer divide(int a, int b)
+	{
+		if (a == 0)
+		{
+			return null;
+		}
+		else
+		{
+			return b/a;
+		}
+	}
 }

@@ -29,7 +29,13 @@ public class SimpleCalculatorTest {
 	public void testDivide()
 	{
 		SimpleCalculator calc = new SimpleCalculator();
-		assertEquals(calc.divide(5, 25), 5);
-		assertEquals(calc.divide(0, 10), -1);
+		assertEquals(calc.divide(5, 25), (Integer) 5);
+	}
+	
+	@Test 
+	public void testDivide2()
+	{
+		SimpleCalculator calc = new SimpleCalculator();		
+		Assert.assertNull(calc.divide(0, 10));
 	}
 }
